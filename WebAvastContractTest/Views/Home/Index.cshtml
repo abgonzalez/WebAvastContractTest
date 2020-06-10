@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div>
+    <h1>Prime Numbers Table (N+1 x N+1) </h1>
+
+    <p>Select a number to define the dimensions of the Prime Number table. Table will be (N+1 x N+1) dimensions</p>
+    <div>
+        <label for="number">Select a number (N): </label>
+        <select name="number" id="number">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+        </select>
+        <br><br>
+    </div>
+    <div>
+        <input class="btn btn-primary" type="submit" value="Refresh" onclick="showTable()">
+    </div>
+    <div class="mt-30" id="outcomeTable">
+    </div>
+    <div class="mt-30" id="errorMsg">
+        <div class="panel">
+            <div class="panel-body"  ></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function showTable() {
+        removePartialView('outcomeTable');
+        removePartialView('errorMsg');
+        var number = document.getElementById("number");
+        $.ajax({
+               url: '@Url.Action("ShowTable", "Home")',
+                      data: { number: number.value },
+                    cache: false,
+                    type: "GET",
+                    dataType: "html",
+                    success: function (data) {
+                        showPartialView('outcomeTable', data);
+                     },
+                    error: function (request, status, error) {
+                         showPartialView('errorMsg', status + error);
+                    }
+                });
+    }
+    function showPartialView(placeholder, data) {
+        $("#" + placeholder).html(data);
+    }
+    function removePartialView(placeholder) {
+        $("#" + placeholder).html('');
+    }
+ </script>

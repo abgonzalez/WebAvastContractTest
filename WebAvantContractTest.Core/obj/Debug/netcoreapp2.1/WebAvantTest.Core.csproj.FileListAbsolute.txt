@@ -1,0 +1,9 @@
+C:\tmp\WebAvantTest\WebAvantTest.Core\obj\Debug\netcoreapp2.1\WebAvantTest.Core.csprojAssemblyReference.cache
+C:\tmp\WebAvantTest\WebAvantTest.Core\obj\Debug\netcoreapp2.1\WebAvantTest.Core.csproj.CoreCompileInputs.cache
+C:\tmp\WebAvantTest\WebAvantTest.Core\obj\Debug\netcoreapp2.1\WebAvantTest.Core.AssemblyInfoInputs.cache
+C:\tmp\WebAvantTest\WebAvantTest.Core\obj\Debug\netcoreapp2.1\WebAvantTest.Core.AssemblyInfo.cs
+C:\tmp\WebAvantTest\WebAvantTest.Core\bin\Debug\netcoreapp2.1\WebAvantTest.Core.deps.json
+C:\tmp\WebAvantTest\WebAvantTest.Core\bin\Debug\netcoreapp2.1\WebAvantTest.Core.dll
+C:\tmp\WebAvantTest\WebAvantTest.Core\bin\Debug\netcoreapp2.1\WebAvantTest.Core.pdb
+C:\tmp\WebAvantTest\WebAvantTest.Core\obj\Debug\netcoreapp2.1\WebAvantTest.Core.dll
+C:\tmp\WebAvantTest\WebAvantTest.Core\obj\Debug\netcoreapp2.1\WebAvantTest.Core.pdb

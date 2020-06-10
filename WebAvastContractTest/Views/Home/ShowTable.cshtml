@@ -1,0 +1,28 @@
+﻿@model MatrixViewModel
+<div id="outcomeTable">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="headers"  scope="col">X</th>
+                @{ for (int i = 0; i < Model.PrimeNumbers.Length; i++)
+                    {
+                        <th class="headers" scope="col">@Model.PrimeNumbers[i]</th>
+                    }
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.PrimeNumbers.Length; i++)
+            {
+            <tr>
+                <th class="headers" scope="row">@Model.PrimeNumbers[i]</th>
+                @for (int j = 0; j < Model.PrimeNumbers.Length; j++)
+                {
+                    <td>@Model.Matrix[i, j]</td>
+                }
+
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
